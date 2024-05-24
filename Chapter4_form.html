@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Picnic Registration</title>
+</head>
+
+<body>
+    <h2>Form for School Trip</h2>
+    <form action="registration.py">
+        <label for="name">Name:<br></label>
+        <div>
+            <input type="text" name="myname" id="name" required>
+        </div>
+        <br>
+
+        <label for="class">Class:</label>
+        <div>
+            <input type="number" name="myclass" id="class" value="12" readonly>
+        </div>
+        <br>
+
+        <label for="roll">Roll No:</label>
+        <div>
+            <input type="number" name="myroll" id="roll" min="0" max="63" required>
+        </div>
+        <br>
+
+        <label for="section">Section Code:</label>
+        <div>
+            <select name="mysection" id="section" required>sections
+                <option value="Section  A">Section  A</option>
+                <option value="Section  B">Section  B</option>
+                <option value="Section  C" selected>Section  C</option>
+                <option value="Section  D">Section  D</option>
+            
+            </select>
+        </div>
+        <br>
+        <label for="stream">Stream:</label>
+        <div>
+            Science:<input type="radio" name="mystream" id="stream" checked>
+            Commerce:<input type="radio" name="mystream" id="stream">
+            Arts:<input type="radio" name="mystream" id="stream">
+        </div>
+
+        <br>
+        <label for="school">Name of School:</label>
+        <div>
+            <input type="text" name="myschool" id="school" value="Pranab Vidyapith Hr. Sc. School" readonly>
+        </div>
+        <br>
+        <label for="emailid">Email ID:</label>
+        <div>
+            <input type="email" name="myemail" id="email" value="example@gmail.com" required>
+        </div>
+        <br>
+        <label for="phno">Parents Contact Number:</label>
+        <div>
+            <input type="tel" name="myno" id="phno" pattern="[0-9]{10}" required>
+        </div>
+        <br>
+        
+        <label for="contro">Are you bringing your own food?</label>
+        <div>
+            <input type="checkbox" value="Yes" id="contro" required>
+        </div>
+        <hr>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+
+    </form>
+</body>
+
+</html>
